@@ -57,6 +57,38 @@ CODEPLANT · 배움이 자라나는 코딩·메이킹 교육
 
 ## 카드 구성
 
-표지(실제 부품 사진) → 센서 설명 → 회로 → 연결표 → 핵심 코드와 실행 결과 → 어두운 GitHub 안내, 총 6장입니다. 카드의 코드는 핵심 발췌이며 업로드에는 전체 `sketch.ino`를 사용하세요.
+표지(실제 부품 사진) → 센서 설명 → 회로 → 연결표 → 핵심 코드와 실행 결과 → GitHub 안내, 총 6장입니다. 카드의 코드는 핵심 발췌이며 업로드에는 전체 `sketch.ino`를 사용하세요.
 
-카테고리 디자인: 아날로그센서 · 초록 배경 #DDF3E5, 강조 #267548. 마지막 GitHub 장은 차콜과 초록 강조입니다.
+TECH 공통 디자인: 블루 배경 #DFEAFF, 강조 #315DAB. 마지막 장도 같은 블루를 사용합니다.
+
+## 전체 예제코드
+
+아래 코드를 모두 복사하거나 sketch.ino를 열어 업로드하세요. 카드에는 핵심 부분만 담았습니다.
+
+~~~cpp
+const int CDS_AO_PIN = A0;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int cdsValue = analogRead(CDS_AO_PIN);
+
+  Serial.print("CDS AO: ");
+  Serial.println(cdsValue);
+
+  delay(500);
+}
+~~~
+
+| 코드 | 하는 일 |
+| --- | --- |
+| CDS_AO_PIN = A0 | 밝기 신호를 읽을 보드 핀 지정 |
+| Serial.begin(9600) | 시리얼 통신 준비 |
+| analogRead(CDS_AO_PIN) | 밝기 신호 전압을 0~1023의 값으로 읽기 |
+| Serial.print / println | 값의 이름과 숫자 표시 |
+| delay(500) | 0.5초 기다린 뒤 반복 |
+
+시리얼 모니터는 9600으로 맞춥니다. 이 숫자는 lux가 아닌 밝기 변화의 참고값입니다.
+
