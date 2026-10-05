@@ -36,7 +36,7 @@ USB 전원을 뺀 상태에서 연결하세요. 모듈마다 핀 순서가 다�
 - `diagram.json`: Wokwi 편집용 회로
 - `circuit_preview.html`: 핀 좌표 기반 회로 미리보기(Wokwi elements CDN 필요)
 - `arduino_uno_cds_ao.png`: 회로 이미지
-- `cards/`: 카드뉴스 PNG 7장
+- `cards/`: 카드뉴스 PNG 6장
 - `caption.md`: 게시용 캡션 초안
 
 ## 확인 범위
@@ -49,3 +49,12 @@ USB 전원을 뺀 상태에서 연결하세요. 모듈마다 핀 순서가 다�
 - [Wokwi 조도센서 모듈](https://docs.wokwi.com/parts/wokwi-photoresistor-sensor)
 
 CODEPLANT · 배움이 자라나는 코딩·메이킹 교육
+
+## 표지 사진 출처
+
+- UNO R3 사진: [SparkFun Electronics / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arduino_Uno_-_R3.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/). 원본 비율 유지, 카드 안에서 표시 크기만 조절했습니다.
+- 4핀 조도센서 모듈 사진: [SunFounder 공식 Photoresistor Module 자료](https://docs.sunfounder.com/projects/umsk/en/latest/01_components_basic/11-component_photoresistor.html). SunFounder 제품 예시이며 모듈의 핀 배치는 제품에 따라 다릅니다. 표시 크기만 조절했습니다. 별도의 자유 이용 라이선스를 확인한 사진으로 표시하지 않습니다.
+
+## 카드 구성
+
+표지(실제 부품 사진) → 센서 설명 → 회로 → 연결표 → 핵심 코드와 실행 결과 → 어두운 GitHub 안내, 총 6장입니다. 카드의 코드는 핵심 발췌이며 업로드에는 전체 `sketch.ino`를 사용하세요.
