@@ -8,6 +8,6 @@
 
 전체 코드: https://github.com/CodeplantEDU/codeplant-tech-arduino-001-cds-ao
 
-다음 편에서는 가변저항으로 아날로그 입력을 연습합니다. 저장해 두고 함께 실습해 보세요.
+다음 편에서는 접점식 디지털센서로 상태를 읽는 방법을 연습합니다. 저장해 두고 함께 실습해 보세요.
 
 #코드플랜트 #CODEPLANT #아두이노 #Arduino #조도센서 #센서활용 #피지컬컴퓨팅 #코딩교육
